@@ -56,12 +56,6 @@ body {
   left: -50px;
   transform: skew(-45deg);
 }
-.black-block-right {
-  bottom: -1px;
-  right: -50px;
-  transform: skew(-45deg);
-  border: 2px solid rgb(22, 22, 22);
-}
 
 nav {
   text-transform: uppercase;
@@ -103,9 +97,8 @@ nav .navbar-brand:focus {
 header {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   height: 100vh;
-  width: 100%;
   background-image: url("/images/10644575_1475942359328077_5077253134870128220_o_edited.jpg");
   background-position: right;
   background-size: cover;
@@ -123,13 +116,10 @@ header .shadow {
   z-index: -5;
 }
 header .text {
-  display: flex;
-  flex-direction: column-reverse;
   color: white;
-  height: 100%;
 }
 header .text h1 {
-  margin-top: 70px;
+  margin-top: 60px;
   text-align: center;
   text-transform: uppercase;
   font-size: 1.5rem;
@@ -141,8 +131,12 @@ header .text h1 .logo {
   font-family: "Solide Mirage";
 }
 header .text img {
+  position: absolute;
   width: 200px;
   margin: auto;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .section-heading {
@@ -196,6 +190,7 @@ header .text img {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  position: relative;
   height: 700px;
 }
 .projects .carousel {
