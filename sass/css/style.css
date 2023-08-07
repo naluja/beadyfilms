@@ -134,7 +134,7 @@ header .text img {
   position: absolute;
   width: 200px;
   margin: auto;
-  bottom: 40px;
+  bottom: 80px;
   left: 50%;
   transform: translateX(-50%);
 }
