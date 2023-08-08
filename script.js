@@ -5,12 +5,12 @@ const navBtn = nav.querySelector("button")
 
 const logoImg = document.querySelector(".logo")
 
-const form = document.querySelector('form')
-const name = form.querySelector('#name')
-const email = form.querySelector('#email')
-const msg = form.querySelector('#message')
-const btnSend = form.querySelector('.send')
-const btnClear = form.querySelector('.clear')
+const form = document.querySelector("form")
+const name = form.querySelector("#name")
+const email = form.querySelector("#email")
+const msg = form.querySelector("#message")
+const btnSend = form.querySelector(".send")
+const btnClear = form.querySelector(".clear")
 
 const showError = (input, msg) => {
 	const formBox = input.parentElement
@@ -64,42 +64,31 @@ const formValidation = (input, form) => {
 	}
 }
 const clearInput = input => {
-    input.forEach(el => {
-    el.value = ""
-})
+	input.forEach(el => {
+		el.value = ""
+	})
 }
 
-
-
-const addShadow = () => {
-	if (window.scrollY >= 200) {
-		nav.classList.add("shadow-bg")
-	} else {
-		nav.classList.remove("shadow-bg")
-	}
-}
 const hideNav = () => {
 	navList.classList.remove("show")
 	navBtn.classList.add("collapsed")
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-	logoImg.classList.add('blink-1')
+	logoImg.classList.add("blink-1")
 })
 document.addEventListener("DOMContentLoaded", function () {
-	window.addEventListener("scroll", addShadow)
-
 	navLinks.forEach(item => item.addEventListener("click", hideNav))
 })
 btnSend.addEventListener("click", e => {
-    e.preventDefault()
-    checkForm([name, email, message])
-    checkEmail(email)
-    formValidation([name, email, message], form)
+	e.preventDefault()
+	checkForm([name, email, message])
+	checkEmail(email)
+	formValidation([name, email, message], form)
 })
 btnClear.addEventListener("click", e => {
-e.preventDefault()
+	e.preventDefault()
 
-clearAllErrors([name, email, message])
-clearInput([name, email, message])})
-
+	clearAllErrors([name, email, message])
+	clearInput([name, email, message])
+})
