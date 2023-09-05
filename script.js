@@ -12,6 +12,7 @@ const msg = form.querySelector("#message")
 const btnSend = form.querySelector(".send")
 const btnClear = form.querySelector(".clear")
 
+
 const showError = (input, msg) => {
 	const formBox = input.parentElement
 	const errorText = formBox.querySelector(".errortext")
@@ -73,6 +74,7 @@ const hideNav = () => {
 	navList.classList.remove("show")
 	navBtn.classList.add("collapsed")
 }
+
 
 document.addEventListener("DOMContentLoaded", () => {
 	logoImg.classList.add("blink-1")

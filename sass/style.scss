@@ -41,7 +41,7 @@ nav {
 	text-transform: uppercase;
 	z-index: 5;
 	width: 100%;
-	background-color: rgb(22, 22, 22);
+	background-color:  rgba(22, 22, 22, 0.9);
 
 	.navbar-toggler {
 		padding: 10px;
@@ -168,7 +168,7 @@ header {
 	}
 	.two {
 		.panel-img {
-			background-image: url("/images/ania-sm.jpg");
+			background-image: url("/images/barbs.jpg");
 		}
 	}
 }
@@ -354,6 +354,7 @@ header {
 		}
 	}
 	.about-us {
+		padding: 0px 30px;
 		.panel {
 			display: flex;
 			justify-content: space-between;
@@ -412,6 +413,7 @@ header {
 }
 @media (min-width: 1024px) {
 	header {
+		background-position:100% 50%;
 		.text {
 			h1 {
 				margin-top: 150px;
